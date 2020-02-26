@@ -50,7 +50,7 @@ function mymap(arr,operation){
 }
 
 function myfilter(arr,operation){
-    arr2=[];
+    var arr2=[];
     for(let i=0;i<arr.length;i++){
         val=operation(arr[i]);
         if(val!=undefined){
@@ -60,7 +60,15 @@ function myfilter(arr,operation){
     return arr2;
 }
 
-arr4 = mymap(arr,operation1);
-arr5 = myfilter(arr4,operation2);
-console.log(arr4);
-console.log(arr5);
+function squarer(v){
+    return v*v;
+}
+
+// var arr4 = mymap(arr,operation1);
+// var arr5 = myfilter(arr4,operation2);
+// var arr6 =mymap(arr,squarer);
+
+// console.log(arr4);
+// console.log(arr5);
+// console.log(arr6);
+
